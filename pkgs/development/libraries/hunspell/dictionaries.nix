@@ -477,6 +477,16 @@ rec {
     };
   };
 
+  en_GB-libre = en-gb-libre;
+  en-gb-libre = mkDictFromLibreOffice {
+    shortName = "en-gb";
+    sourceRoot = "en";
+    dictFileName = "en_GB";
+    readmeFile = "README_en_GB.txt";
+    shortDescription = "English (British)";
+    license = with lib.licenses; [ asl20 ];
+  };
+
   # SPANISH
 
   es_ANY = es-any;
